@@ -1,0 +1,10 @@
+package interfaces;
+
+public class DriverMySQL implements InterfaceBD{
+	public void conectar(String servidor){
+		System.out.println("MYSQ> Connecting on "+servidor);
+	}
+	public void executar(String SQL){
+		System.out.println("MYSQL> "+SQL+" executed");
+	}
+}
